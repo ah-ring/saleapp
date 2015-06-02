@@ -15,130 +15,68 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
-    <TableLayout
-        android:id="@+id/tl_register"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <!-- 显示注册按钮和标题信息 -->
 
-        <!-- 显示注册按钮和标题信息 -->
+    <include
+        android:id="@+id/main_head"
+        layout="@layout/main_head" />
 
-        <RelativeLayout
-            android:id="@+id/login_title"
+    <ScrollView
+        android:id="@+id/sv_register"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="48.0dip"
-            android:background="@drawable/bg" >
-
-            <TextView
-                android:id="@+id/register_back"
-                android:layout_width="wrap_content"
-                android:layout_height="35.0dip"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="8.0dip"
-                android:gravity="center"
-                android:paddingLeft="10.0dip"
-                android:paddingRight="10.0dip"
-                android:text="@string/back"
-                android:textColor="#ffffffff"
-                android:textSize="14.0dip"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/register_center_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:singleLine="true"
-                android:text="@string/register"
-                android:textColor="#ffffffff"
-                android:textSize="18.0dip"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <TableRow>
-
-            <TextView
-                android:id="@+id/tv_mobile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="@string/mobile" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
             <EditText
                 android:id="@+id/et_mobile"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:textSize="12sp"
                 android:hint="@string/mobile"
                 android:inputType="number"
                 android:singleLine="true" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:id="@+id/tv_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="@string/password" />
 
             <EditText
                 android:id="@+id/et_password"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginBottom="10dip"
+                android:textSize="12sp"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:singleLine="true" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:id="@+id/tv_shop_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="@string/shop_name" />
 
             <EditText
-                android:id="@+id/et_shop_name"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:hint="@string/shop_name"
-                android:inputType="text" />
-        </TableRow>
+                android:id="@+id/et_comfirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/bg_edittext"
+                android:textSize="12sp"
+                android:hint="@string/comfirm_password"
+                android:inputType="textPassword"
+                android:singleLine="true" />
 
-        <TableRow>
-
-            <TextView
-                android:id="@+id/tv_adress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="@string/shop_address" />
-
-            <EditText
-                android:id="@+id/et_address"
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:hint="@string/shop_address"
-                android:inputType="text" />
-        </TableRow>
-
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="200.0dip"
-            android:layout_height="42.0dip"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="12.0dip"
-            android:layout_marginTop="12.0dip"
-            android:background="@drawable/bg"
-            android:text="@string/register"
-            android:textColor="@color/white"
-            android:textSize="18.0dip"
-            android:textStyle="bold" />
-    </TableLayout>
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="200.0dip"
+                android:layout_height="42.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginTop="12.0dip"
+                android:background="@drawable/bg"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

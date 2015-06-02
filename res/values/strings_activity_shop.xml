@@ -3,4 +3,16 @@
     <string name="edit_my_shop">编辑我的商店</string>
     <string name="edit_my_merch">编辑我的商品</string>
     <string name="input_search_merch">请输入商品名称</string>
+    
+    <string name="preview">预览</string>
+    <string name="link">复制链接</string>
+    <string name="share">分享</string>
+    
+    <string name="selling">出售中</string>
+    <string name="out_published">已下架</string>
+    <string name="classify">分类</string>
+    
+    <string name="add_time">添加时间</string>
+    <string name="sale_volumn">销量</string>
+    <string name="in_stock">库存</string>
 </resources>
